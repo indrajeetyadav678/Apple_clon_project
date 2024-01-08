@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Playfair+Display:ital@1&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+}
+
+body{
+    background-color: rgb(232, 230, 230);
+}
+
+#navbarapp {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(233, 231, 231);
+}
+
+#navbarapp li {
+    margin-left: 20px;
+}
+
+#navbarapp li a {
+    color: rgb(21, 20, 20);
+    text-decoration: none;
+    letter-spacing: 0.9px;
+    font-weight: 800;
+}
+
+#appicon i {
+    font-size: 22px;
+}
+
+#shopicon i,
+#searchicon i {
+    font-size: 16px;
+}
+
+/* ============================= store dropdown ======================================= */
+#stor {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(233, 231, 231);
+    padding-left: 15%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    position: absolute;
+}
+
+#store-block1,
+#store-block2,
+#store-block3 {
+    list-style-type: none;
+    margin-left: 60px;
+}
+
+#block1-heading,
+#block3-heading,
+#block2-heading {
+    color: rgb(14, 14, 14);
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+.drop-block1 a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(29, 28, 28);
+    text-decoration: none;
+}
+
+.drop-block1 {
+    margin-bottom: 5px;
+}
+
+.drop-block2 a,
+.drop-block3 a {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(43, 41, 41);
+    text-decoration: none;
+}
+
+.drop-block2,
+.drop-block3 {
+    margin-bottom: 7px;
+}
+
+#mac-box {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(233, 231, 231);
+    padding-left: 15%;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    position: absolute;
+}
+
+/* ================================= Section- 2============================================ */
+#offer_info{
+    width: 100%;
+    height:90px;
+    font-weight: bold;
+    text-align: center;
+    padding:15px 20%;
+    line-height: 28px;
+    background-color: white;
+    /* z-index:-1; */
+}
+#offer_info a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#box-1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 60px 60px 40px 150px;
+}
+#conbox1{
+    width:60%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(125, 121, 121);
+}
+#cont1{
+    font-size: 60px;
+    font-weight: bolder;
+    color:black;
+}
+#conbox2{
+    width: 250px;
+    padding: 0px;
+}
+#one{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+
+}
+#one aside{
+    float: left;
+    margin-right: 15px;
+
+}
+#one aside img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+#two{
+    width: 100%;
+    padding: 11px;
+
+}
+#two aside{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+#two aside img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+/* ================ part 2 ============ */
+
+#mainbox_p2{
+    width:100%;
+    height: 150px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    /* border:1px solid black; */
+    overflow-x: scroll;
+}
+#mainbox_p2::-webkit-scrollbar{
+    display: none;
+}
+#slider_p2{
+    width:110%;
+    height: 150px;
+    /* border:1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#model_p2{
+width: 100px;
+height: 150px;
+}
+#img_p2{
+    width:100px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+#img_p2 img{
+    width:100px;
+    height: 100px;
+}
+#itemname_p2{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+#priviousbtn{
+    width: 40px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top:72vh;
+    left:30px;
+    background-color: rgba(247, 241, 241, 0.4);
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+
+    /* cursor: pointer; */
+
+}
+#nextbtn{
+    width: 40px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute;
+    top:72vh; 
+    right: 50px;
+    background-color: rgba(247, 241, 241, 0.4);
+    text-align: center;
+    border-radius: 50%;
+    border: none;
+    /* cursor: pointer; */
+}
+
+/* ============= part 3 ================== */
+#mainbox_p3{
+width: 100%;
+height: auto;
+overflow-x: scroll;
+}
+/* ============= part 3 ================== */
+#mainbox_p3::-webkit-scrollbar{
+    display: none;
+}
+#slider_p3{
+    width: 260%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    padding-left: 70px;
+    margin-bottom: 60px;
+}
+
+#imgbox1_p3, #imgbox2_p3, #imgbox3_p3,#imgbox4_p3,#imgbox5_p3,#imgbox6_p3,#imgbox7_p3,#imgbox8_p3{
+    width: 400px;
+    height: 420px;
+    box-shadow: 3px 3px 10px black;
+    border-radius: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 30px;
+
+}
+#imgbox1_p3:hover, #imgbox2_p3:hover, #imgbox3_p3:hover,#imgbox4_p3:hover,#imgbox5_p3:hover,#imgbox6_p3:hover,#imgbox7_p3:hover,#imgbox8_p3:hover{
+    scale:1.03;
+    transition: 0.7s;
+}
+#imgbox1_p3{
+    color: white;
+    /* padding: 30px; */
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-15-pro-202309?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1692910040844'); 
+}
+#imgbox2_p3{
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-iphone-15-202309?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1692719973220');
+}
+#imgbox3_p3{
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-pro-202310?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1696964122967');
+}
+#imgbox4_p3{
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-s9-202309_GEO_IN?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1693501324197');
+}
+#imgbox7_p3{
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-air-202203?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1645636337374');
+}
+#imgbox5_p3{
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-ipad-202310_GEO_IN?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1696875268001');
+}
+#imgbox8_p3{
+    background-image: url('https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-watch-se-202303_GEO_IN?wid=400&hei=500&fmt=p-jpg&qlt=95&.v=1677306368408');
+}
+#imgbox6_p3{
+    background-image: url(' https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-40-macbook-air-202306?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1683844828182');
+}
+
+
+
+
+
