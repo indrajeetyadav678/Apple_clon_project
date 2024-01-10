@@ -387,17 +387,17 @@ let slideitemimg = [
     {
         "image1": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-mac-nav-202310?wid=200&hei=130&fmt=png-alpha&.v=1696964122666",
         "product_name": "Mac",
-        // "id":1
+        "id":1
     },
     {
         "image1": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-iphone-nav-202309_GEO_EMEA?wid=200&hei=130&fmt=png-alpha&.v=1692971740071",
         "product_name": "iPhone",
-        // "id":2
+        "id":2
     },
     {
         "image1": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-ipad-nav-202210?wid=200&hei=130&fmt=png-alpha&.v=1664912135437",
         "product_name": "iPad",
-        // "id":3
+        "id":3
     },
     {
         "image1": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/store-card-13-watch-nav-202309_GEO_IN?wid=200&hei=130&fmt=png-alpha&.v=1693703814407",
@@ -440,17 +440,33 @@ let slideitemimg = [
 </div>
 `)
 })()
-var values = 0;
+let valueIndex = 0;
+const containlength = slideitemimg.length
+console.log(containlength)
 
-function gonext(values){
+function show(index){
     
-    if(values==1){
-        document.getElementById('slider_p2').style.marginLeft ="-50px";
-        document.getElementById('slider_p2').style.transition ="2s";
-values++
+    if(index <0){
+        valueIndex = containlength
     }
-    else if(values==2){
-        document.getElementById('slider_p2').style.marginLeft ="-100px";
-        document.getElementById('slider_p2').style.transition ="2s";
+    else if(index >= 4){
+        valueIndex = 0;
     }
+    else{
+        valueIndex = index;
+    }
+
+    const slidervalue = -valueIndex * 50 + "px";
+
+    document.getElementById('slider_p2').style.marginLeft = slidervalue;
+}
+
+function goprev(n){
+    valueIndex +=n;
+    show(valueIndex)
+}
+
+function gonext(n){
+    valueIndex += n;
+    show(valueIndex)
 }
