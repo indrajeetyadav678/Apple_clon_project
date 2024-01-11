@@ -470,3 +470,67 @@ function gonext(n){
     valueIndex += n;
     show(valueIndex)
 }
+
+// ============== part 3 =================
+let valueIndex1 = 0;
+const p3containlength = document.querySelectorAll('.box_p3').length
+console.log(p3containlength)
+
+function show2(index){
+    
+    if(index <0){
+        valueIndex1 = p3containlength
+    }
+    else if(index >= 6){
+        valueIndex1 = 0;
+    }
+    else{
+        valueIndex1 = index;
+    }
+
+    const slidervalue1 = -valueIndex1 * 420 + "px";
+
+    document.getElementById('slider_p3').style.marginLeft = slidervalue1;
+}
+
+function prev2(n){
+    valueIndex1 +=n;
+    show2(valueIndex1)
+}
+
+function next2(n){
+    valueIndex1 += n;
+    show2(valueIndex1)
+}
+
+// ===================== part - 4 ===========================================
+let valueIndex2 = 0;
+const p4containlength = document.querySelectorAll('.box_p4').length
+console.log(p4containlength)
+
+function show3(index){
+    
+    if(index <0){
+        valueIndex2 = p3containlength
+    }
+    else if(index >= 4){
+        valueIndex2 = 0;
+    }
+    else{
+        valueIndex2 = index;
+    }
+
+    const slidervalue2 = -valueIndex2 * 410 + "px";
+
+    document.getElementById('slider_p4').style.marginLeft = slidervalue2;
+}
+
+function prev3(n){
+    valueIndex2 +=n;
+    show3(valueIndex2)
+}
+
+function next3(n){
+    valueIndex2 += n;
+    show3(valueIndex2)
+}
